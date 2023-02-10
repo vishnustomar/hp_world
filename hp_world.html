@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP WORLD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Josefin Sans", sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://r4.wallpaperflare.com/wallpaper/932/891/825/hogwarts-legacy-video-games-dragon-owl-harry-potter-hd-wallpaper-9846ad3860f06c28e07ce1ae58d2244a.jpg?timestamp=1671337825404");
+            background-repeat: no-repeat;
+            background-size: 100% 150%;
+        }
+
+        .navbar {
+            background-color: #2a2626;
+            border-radius: 20px;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 35px 20px;
+
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+            color: #d17e0f;
+        }
+
+        .navbar li a:hover {
+            color: red
+        }
+
+        .navbar li a:visited {
+            color: #7373c8;
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 35px 75px;
+            max-width: 50%;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+        }
+
+        main {
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        section h3 {
+            font-size: 35px;
+            font-weight: 200;
+            letter-spacing: 3px;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        section h1 {
+            margin: 30px 0 20px 0;
+            font-size: 55px;
+            font-weight: 700;
+            text-shadow: 2px 1px 5px black;
+            text-transform: uppercase;
+        }
+
+        section p {
+            font-size: 25px;
+            word-spacing: 2px;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        section a {
+            padding: 12px 30px;
+            border-radius: 4px;
+            outline: none;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all 0.5s ease;
+        }
+
+        section .btnone {
+            background: #ff9800;
+            color: black;
+            margin: 0px 7px;
+        }
+
+        .btnone:hover {
+            background: #00b894;
+            color: white;
+        }
+
+        section .btntwo {
+            background: #cddc39;
+            color: black;
+            margin: 0px 7px;
+        }
+
+        .btntwo:hover {
+            background: #00b894;
+            color: white;
+        }
+
+        .change_content:after {
+            content: "";
+            animation: changetext 10s infinite linear;
+            color: #00b894;
+        }
+
+        @keyframes changetext {
+            0% {
+                content: "Lord Voldemort";
+            }
+
+            20% {
+                content: "Hermione Granger";
+            }
+
+            40% {
+                content: "Ron Weasely";
+            }
+
+            60% {
+                content: "Harry Potter";
+            }
+
+            80% {
+                content: "Severus Snape";
+            }
+
+            100% {
+                content: "Albus Dumbledore";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <img src="https://1000logos.net/wp-content/uploads/2021/04/Hogwarts-Logo.png" width="170 px">
+                <li><a href="#">HOME</a></li>
+                <li><a href="https://www.wizardingworld.com/" target="_blank">GALLERY</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Harry_Potter_(film_series)" target="_blank">ABOUT</a></li>
+                <li><a href="https://www.imdb.com/list/ls072049366/" target="_blank">IMDB</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h3>Welcome To Harry Potter Universe</h3>
+                <h1>This is the Universe of <span class="change_content"> </span> <span style="margin-top: -10px;">
+                    </span> </h1>
+                <p>"Don't let the muggles get you down"</p>
+            </section>
+        </main>
+        <section>
+            <span>
+                <a href="https://www.warnerbros.com/movies/harry-potter-complete-8-film-collection" class="btnone">learn more</a>
+                <a href="https://www.goodreads.com/series/45175-harry-potter" class="btntwo">Our Books</a>
+            </span>
+        </section>
+    </header>
+</body>
+
+</html>
